@@ -9976,8 +9976,8 @@ i.fa.loading-fa-icon {
 
 @font-face {
   font-family: FontAwesome;
-  src: url(../../../../assets/fonts/fontawesome/font/fontawesome-webfont.eot?v=3.0.52654);
-  src: url(../../../../assets/fonts/fontawesome/font/fontawesome-webfont.eot?#iefix&v=3.0.52654) format("embedded-opentype"),url(../../../../assets/fonts/fontawesome/font/fontawesome-webfont.woff?v=3.0.52654) format("woff"),url(../../../../assets/fonts/fontawesome/font/fontawesome-webfont.ttf?v=3.0.52654) format("truetype");
+  src: url(../assets/fonts/fontawesome/font/fontawesome-webfont.eot?v=3.0.52654);
+  src: url(../assets/fonts/fontawesome/font/fontawesome-webfont.eot?#iefix&v=3.0.52654) format("embedded-opentype"),url(../assets/fonts/fontawesome/font/fontawesome-webfont.woff?v=3.0.52654) format("woff"),url(../assets/fonts/fontawesome/font/fontawesome-webfont.ttf?v=3.0.52654) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
