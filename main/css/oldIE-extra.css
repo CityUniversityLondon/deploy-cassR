@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .btn {
   display: inline-block;
   *display: inline;
@@ -13041,12 +13043,30 @@ aside .news-article-widget:last-child {
 
 #symposium #container {
   max-width: 980px;
-  padding: 0 10px;
 }
 
 #symposium header {
   margin-bottom: 30px;
   position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#symposium .content h1,
+#symposium .content h2,
+#symposium .content h3 {
+  text-align: center;
+}
+
+#symposium .span18 {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+#symposium .span18 .embed-wrapper {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #symposium .header__social {
@@ -13083,6 +13103,7 @@ aside .news-article-widget:last-child {
 }
 
 #symposium .content {
+  padding: 0 15px;
   margin-top: 30px;
 }
 
@@ -13106,6 +13127,7 @@ aside .news-article-widget:last-child {
 
 #symposium .global-nav-toggler {
   right: -.15em;
+  border: none;
 }
 
 #symposium .global-nav-toggler .icon-remove {
@@ -13159,12 +13181,12 @@ aside .news-article-widget:last-child {
 
 #symposium .selected {
   background-color: #333;
-  color: #FFF!important;
+  color: #fff!important;
 }
 
 #symposium .selected:active,
 #symposium .selected:focus {
-  background-color: #8D182A;
+  background-color: #8d182a;
 }
 
 #symposium .global-nav-wrapper--active {
@@ -13200,12 +13222,12 @@ aside .news-article-widget:last-child {
   margin: 0;
   background: 0 0;
   clear: both;
+  text-align: center;
 }
 
 #symposium .global-nav-sym__item {
   position: relative;
-  float: left;
-  display: block;
+  display: inline-block;
 }
 
 #symposium .global-nav-sym__item .global-nav-sym__item__header {
@@ -13258,22 +13280,49 @@ aside .news-article-widget:last-child {
   background-color: #d7d7d7;
 }
 
-#symposium .profile-list__element {
-  margin: 20px 5px 0;
-  margin: 20px 15px;
-}
-
 #symposium .profile-list__element a {
   display: inline-block;
   border-bottom: 0;
+  border: 2px solid transparent;
+}
+
+#symposium .profile-list__element a:focus {
+  background: 0 0;
+  border: 2px solid #b91b1b;
+}
+
+#symposium .profile-list__element a:focus .profile-list__element__text p {
+  color: #b91b1b;
 }
 
 #symposium .profile-list__element img {
-  border: 1px solid #ccc;
+  margin: 15px;
+}
+
+#symposium .profile-list__element img:hover {
+  margin: 10px;
+  width: 160px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 #symposium .profile-list__element__text {
   max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#symposium .profile-list__element__text h4 {
+  color: #b91b1b;
+}
+
+#symposium .profile-list__element__text p:first-of-type {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+#symposium .profile-list__element__text p:last-child {
+  color: grey;
 }
 
 #symposium .profile__name-link {
@@ -13299,6 +13348,10 @@ aside .news-article-widget:last-child {
   box-shadow: 0 0 25px 2px rgba(0,0,0,.28);
 }
 
+#symposium .symp-event-list {
+  padding: 0 10px!important;
+}
+
 #symposium .symp-event-list__collection-of-day {
   width: 60%;
 }
@@ -13310,25 +13363,26 @@ aside .news-article-widget:last-child {
 #symposium .symp-event-list__collection-of-day h2 {
   text-decoration: none;
   display: inline-block;
-  width: 95%;
-  height: 40px;
-  background-color: #8D182A;
-  color: #EEE;
+  width: 100%;
+  background-color: #8d182a;
+  color: #eee;
   border: 1px dotted transparent;
   padding: 5px 10px;
   font-size: 1.6em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 300px;
 }
 
 #symposium .symp-event-list__collection-of-day h2:hover {
-  color: #8D182A;
-  background-color: #CCC;
+  color: #8d182a;
+  background-color: #ccc;
 }
 
 #symposium .symp-event-list__collection-of-day h2:active,
 #symposium .symp-event-list__collection-of-day h2:focus {
-  background-color: #CCC;
-  color: #8D182A;
+  background-color: #ccc;
+  color: #8d182a;
   border: 1px dotted transparent;
 }
 
@@ -13353,7 +13407,7 @@ aside .news-article-widget:last-child {
 #symposium .symp-event-list__item--break {
   -webkit-box-shadow: unset;
   box-shadow: unset;
-  background-color: #ECECEC;
+  background-color: #ececec;
 }
 
 #symposium .symp-event-list__collection {
@@ -13372,6 +13426,10 @@ aside .news-article-widget:last-child {
   top: 10px;
   right: 10px;
   max-width: 20%;
+}
+
+#symposium .symp-event-list__logo img {
+  width: 100%;
 }
 
 #symposium .symp-event-list__item__details {
@@ -13401,7 +13459,6 @@ aside .news-article-widget:last-child {
   height: 48px;
   position: relative;
   top: 5px;
-  border: 1px solid #ccc;
 }
 
 #symposium .symposium-event-list__item__profile__name {
@@ -13471,8 +13528,21 @@ aside .news-article-widget:last-child {
   text-align: left;
 }
 
-#symposium .symp-profile__head img {
-  border: 1px solid #ccc;
+#symposium .symp-profile__head__role {
+  padding-left: 30px;
+  border-left: 4px solid #c00f22;
+  margin-top: 20px;
+}
+
+#symposium .symp-profile__head__role h1,
+#symposium .symp-profile__head__role p {
+  text-align: left;
+}
+
+#symposium .symp-profile__event:nth-last-of-type(n+2) {
+  border-bottom: 2px dotted gray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #symposium .symp-profile__org {
@@ -13518,8 +13588,24 @@ aside .news-article-widget:last-child {
 #symposium h2,
 #symposium h3,
 #symposium h4 {
-  -webkit-font-feature-settings: "lnum" 1;
-  font-feature-settings: "lnum" 1;
+  -webkit-font-feature-settings: 'lnum' 1;
+  font-feature-settings: 'lnum' 1;
+}
+
+#symposium .wifi-content {
+  position: relative;
+}
+
+#symposium .wifi-content p {
+  margin-left: 24px;
+}
+
+#symposium .far.fa-calendar-alt::before {
+  font-family: fontawesome;
+  content: '';
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
 }
 
 .home .header {
