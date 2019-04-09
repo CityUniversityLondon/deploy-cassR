@@ -13522,9 +13522,7 @@ aside .news-article-widget:last-child {
   padding-right: 10px;
 }
 
-#symposium .content h1,
-#symposium .content h2,
-#symposium .content h3 {
+#symposium .content h1 {
   text-align: center;
 }
 
@@ -14049,10 +14047,6 @@ aside .news-article-widget:last-child {
   #symposium .symp-profile {
     width: 70%;
   }
-}
-
-#symposium .symp-profile__head {
-  text-align: center;
 }
 
 @media (min-width:480px) {
