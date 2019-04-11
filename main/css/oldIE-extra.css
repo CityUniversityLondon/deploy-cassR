@@ -13054,6 +13054,7 @@ aside .news-article-widget:last-child {
 
 #symposium .content h1 {
   text-align: center;
+  text-align: left;
 }
 
 #symposium .span18 {
@@ -13110,7 +13111,6 @@ aside .news-article-widget:last-child {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   margin-top: 20px;
 }
 
@@ -13427,7 +13427,8 @@ aside .news-article-widget:last-child {
 }
 
 #symposium .symp-event-list__logo img {
-  width: 100%;
+  max-width: 100%;
+  max-width: 60%;
 }
 
 #symposium .symp-event-list__item__details {
